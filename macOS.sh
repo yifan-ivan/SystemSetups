@@ -48,6 +48,8 @@ done
 log "Writing to .zshrc file..."
 cat>.zshrc<<EOF
 alias cls="clear"
+alias ls="lsd"
+alias l="ls -al"
   
 # ========== PYENV PART START ==========
 
