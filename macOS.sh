@@ -4,7 +4,7 @@ log(){
 
 # Packages list
 BREW=("pyenv" "pyenv-virtualenv" "ffmpeg" "lsd" "tldr" "you-get" "mas" "wget")
-BREW_CASK=("iina" "docker" "java" "microsoft-edge" "iterm2" "visual-studio-code" "sourcetree" "wechat" "qq" "obsidian" "discord" "scroll-reverser" "font-hack-nerd-font" "istat-menus" "google-chrome" "forklift")
+BREW_CASK=("iina" "docker" "java" "microsoft-edge" "iterm2" "visual-studio-code" "sourcetree" "wechat" "qq" "obsidian" "discord" "scroll-reverser" "font-hack-nerd-font" "istat-menus" "google-chrome" "forklift" "intellij-idea-ce")
 BREW_TAP=("homebrew/cask-fonts")
 MAS=()
 VSCODE_EXTENSIONS=("akamud.vscode-theme-onedark" "coenraads.bracket-pair-colorizer" "ms-ceintl.vscode-language-pack-zh-hans" "formulahendry.code-runner" "yzhang.markdown-all-in-one" "ms-python.python" "ms-vscode-remote.remote-ssh")
