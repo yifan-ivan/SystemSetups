@@ -12,6 +12,9 @@ VSCODE_EXTENSIONS=("akamud.vscode-theme-onedark" "coenraads.bracket-pair-coloriz
 log "Please make sure you are in a VPN env. Press any key to continue..."
 read
 
+log "Installing Xcode Commandline Tool..."
+xcode-select --install
+
 # Install Homebrew
 log "Installing Homebrew..."
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
@@ -81,8 +84,6 @@ defaults write com.apple.dock tilesize -int 40; killall Dock
 defaults write com.apple.Dock showhidden -bool yes; killall Dock
 
 # vscode
-
-log "Please open vscode and add code command to PATH. Press any key to continue."
 
 for ext in ${VSCODE_EXTENSIONS[*]}
 do
