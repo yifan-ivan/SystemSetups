@@ -34,11 +34,11 @@ done
 for pkg in ${BREW_CASK[*]}
 do
     log "Installing $pkg with Homebrew Cask..."
-    brew install $pkg
+    brew cask install $pkg
 done
 
 # Install packages with Mas
-for pkg in ${BREW_CASK[*]}
+for pkg in ${MAS[*]}
 do
     log "Installing $pkg with Mas..."
     mas install $pkg
@@ -76,10 +76,13 @@ git config --global user.email wyf0762@foxmail.com
 
 # system preference
 
+log "Editing system preference..."
 defaults write com.apple.dock tilesize -int 40; killall Dock
 defaults write com.apple.Dock showhidden -bool yes; killall Dock
 
 # vscode
+
+log "Please open vscode and add code command to PATH. Press any key to continue."
 
 for ext in ${VSCODE_EXTENSIONS[*]}
 do
